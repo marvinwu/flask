@@ -26,5 +26,5 @@ build:
 
     - script:
         name: run tox
-        code: tox -e $(echo py$TRAVIS_PYTHON_VERSION | tr -d . | sed -e 's/pypypy/pypy/')-$REQUIREMENTS
+        code: tox -e $(echo py2.7 | tr -d . | sed -e 's/pypypy/pypy/')-$REQUIREMENTS
 
