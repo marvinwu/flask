@@ -21,6 +21,10 @@ build:
         code: pip install coveralls
 
     - script:
+        name: install tox
+        code: pip install tox>=1.8
+
+    - script:
         name: echo python information
         code: |
           echo "python version $(python --version) running"
